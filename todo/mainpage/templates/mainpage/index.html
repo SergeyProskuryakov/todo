@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1>list</h1>
+    <p>{{Задачи}}</p>
     <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        {% for задача in Задачи}
+        <li>{{задача}}</li>
+        {% endfor %}
     </ul>
+    <p>{{tasks_list}}</p>
 </body>
 </html>
